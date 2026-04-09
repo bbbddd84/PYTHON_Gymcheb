@@ -30,7 +30,17 @@ print(f"\n(Tvé skóre štěstí pro tento pokus bylo: {stesti}/100)")
 # ==========================================
 
 # SEM DOPLŇ SVŮJ KÓD:
+import random
 
+print("Házím kostkou...")
+hod = random.randint(1, 6)
+
+print(f"Padlo číslo: {hod}")
+
+if hod == 6:
+    print("VÍTĚZSTVÍ!")
+else:
+    print("Zkus to znovu.")
 
 
 # ==========================================
@@ -43,7 +53,18 @@ print(f"\n(Tvé skóre štěstí pro tento pokus bylo: {stesti}/100)")
 # ==========================================
 
 # SEM DOPLŇ SVŮJ KÓD:
+import random
 
+print("Zjišťuji, jak ses dnes dostal do školy...")
+
+cesta = random.randint(1, 3)
+
+if cesta == 1:
+    print("Šel jsi pěšky.")
+elif cesta == 2:
+    print("Jel jsi autobusem.")
+else:
+    print("Jel jsi na drakovi!")
 
 
 # ==========================================
@@ -61,14 +82,46 @@ print(f"\n(Tvé skóre štěstí pro tento pokus bylo: {stesti}/100)")
 # ==========================================
 
 # SEM DOPLŇ SVŮJ KÓD:
+import random
+import time
 
+print("Vítej v generátoru digitálního krystalu!")
+
+barva = input("Zadej svou oblíbenou barvu: ")
+
+velikost = random.randint(1, 10)
+
+print("Krystal se formuje...")
+time.sleep(2)
+
+print(f"Tvoje energie barvy {barva} vytvořila krystal o velikosti {velikost}!")
+
+if velikost > 5:
+    print("\nTvůj krystal:")
+    print("     /\\")
+    print("    /  \\")
+    print("   /    \\")
+    print("  /______\\")
+else:
+    print("Krystal je příliš malý na zobrazení.")
 
 # ==========================================
 # ÚKOL Č. 4: Vytvoř "Digitální váhu", která náhodně vygeneruje hmotnost balíčku od 0.5 kg do 20.0 kg (pomocí uniform). Pokud váží víc než 15 kg, vypiš varování o těžkém nákladu.
 # ==========================================
 
 # SEM DOPLŇ SVŮJ KÓD:
+import random
 
+print("Digitální váha se spouští...")
+
+hmotnost = random.uniform(0.5, 20.0)
+
+print(f"Hmotnost balíčku: {hmotnost:.2f} kg")
+
+if hmotnost > 15:
+    print("POZOR: Těžký náklad!")
+else:
+    print("Balíček je v normě.")
 
 
 # ==========================================
@@ -84,7 +137,18 @@ print(f"\n(Tvé skóre štěstí pro tento pokus bylo: {stesti}/100)")
 # ==========================================
 
 # SEM DOPLŇ SVŮJ KÓD:
+import random
 
+print("Hra o štěstí začíná...")
+
+stesti = random.randint(1, 100)
+
+print(f"Tvoje číslo je: {stesti}")
+
+if stesti > 50:
+    print("Dnes máš štěstí!")
+else:
+    print("Zkus to znovu.")
 
 
 # ==========================================
@@ -93,3 +157,19 @@ print(f"\n(Tvé skóre štěstí pro tento pokus bylo: {stesti}/100)")
 # ==========================================
 
 # SEM DOPLŇ SVŮJ KÓD:
+import random
+import time
+
+print("Hra o štěstí začíná...")
+
+print("Házím kostkou...")
+time.sleep(2)
+
+stesti = random.randint(1, 100)
+
+print(f"Tvoje číslo je: {stesti}")
+
+if stesti > 50:
+    print("Dnes máš štěstí!")
+else:
+    print("Zkus to znovu.")
