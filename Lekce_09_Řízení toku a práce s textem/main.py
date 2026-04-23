@@ -8,7 +8,16 @@ import time
 print("--- Úkol 1: Odpočet ---")
 
 # ZDE DOPRACOVAT KÓD
+import time
 
+print("--- Úkol 1: Odpočet ---")
+
+# Cyklus počítá od 5 do 1 (krok -1 znamená odčítání)
+for i in range(5, 0, -1):
+    print(i)
+    time.sleep(1)  # Pauza 1 sekunda mezi čísly
+
+print("START!")
 
 # ==========================================
 # ÚKOL 2: Break
@@ -19,7 +28,14 @@ print("\n--- Úkol 2: Stop na banánu ---")
 ovoce = ["jablko", "hruska", "banan", "pomeranc", "jahoda"]
 
 # ZDE DOPRACOVAT KÓD
+print("\n--- Úkol 2: Stop na banánu ---")
+ovoce = ["jablko", "hruska", "banan", "pomeranc", "jahoda"]
 
+for item in ovoce:
+    if item == "banan":
+        print("Banán nalezen, končím!")
+        break  # Okamžitě ukončí celý cyklus
+    print(item)
 
 # ==========================================
 # ÚKOL 3: Continue
@@ -29,7 +45,12 @@ ovoce = ["jablko", "hruska", "banan", "pomeranc", "jahoda"]
 print("\n--- Úkol 3: Přeskoč sudá ---")
 
 # ZDE DOPRACOVAT KÓD
+print("\n--- Úkol 3: Přeskoč sudá ---")
 
+for i in range(1, 11):
+    if i % 2 == 0:
+        continue  # Přeskočí sudá čísla
+    print(i)
 
 # ==========================================
 # ÚKOL 4: Metoda .join()
@@ -40,7 +61,11 @@ print("\n--- Úkol 4: Spojování slov ---")
 slova = ["Python", "je", "super", "jazyk"]
 
 # ZDE DOPRACOVAT KÓD
+print("\n--- Úkol 4: Spojování slov ---")
+slova = ["Python", "je", "super", "jazyk"]
 
+vysledek = " - ".join(slova)
+print(vysledek)
 
 # ==========================================
 # ÚKOL 5: For - Else (Hledání čísla)
@@ -52,3 +77,13 @@ print("\n--- Úkol 5: Hledání s Else ---")
 cisla = [1, 3, 7, 11, 15] 
 
 # ZDE DOPRACOVAT KÓD
+print("\n--- Úkol 5: Hledání s Else ---")
+cisla = [1, 3, 7, 11, 15]
+
+for cislo in cisla:
+    if cislo == 10:
+        print("Nalezeno")
+        break  # Pokud najdeme, ukončíme cyklus
+else:
+    # Tento blok se provede jen pokud nedošlo k break
+    print("Číslo 10 v seznamu není")
